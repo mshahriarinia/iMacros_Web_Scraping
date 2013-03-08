@@ -1,0 +1,11 @@
+﻿VERSION BUILD=7361445
+TAB T=1
+'TAB CLOSEALLOTHERS
+'URL GOTO=http://deed.co.travis.tx.us/RealEstate/SearchResults.aspx
+'TAG POS=1 TYPE=TR FORM=ID:Form1 ATTR=ID:gxG1_r_{{macroPosVal}} EXTRACT=HTM
+TAG XPATH="//tr[@id='gxG1_r_{{!loop}}']/td/a" EXTRACT=HREF
+URL GOTO={{!EXTRACT}}
+WAIT SECONDS=6
+BACK 
+
+'BACK 

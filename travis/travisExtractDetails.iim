@@ -1,0 +1,53 @@
+﻿VERSION BUILD=7361445
+SET !VAR1 "f_oprTab__ctl0_documentInfoList__ctl0_"
+'instrument
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}txtInstrumentNo EXTRACT=TXT 
+'multi seq
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}Datalabel4 EXTRACT=TXT 
+'Document Date
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}txtDocDate EXTRACT=TXT 
+'Date Filed
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}DataLabel3 EXTRACT=TXT 
+'Document Type
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}Datalabel2 EXTRACT=TXT 
+'Book
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}DataLabel5 EXTRACT=TXT 
+'Page
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}DataLabel6 EXTRACT=TXT 
+'Remarks
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}DataLabel7 EXTRACT=TXT 
+'image
+'TAG POS=1 TYPE=a FORM=ID:Form1 ATTR=ID:{{!VAR1}}DataHyperlink1 EXTRACT=HREF 
+'Grantor
+TAG POS=1 TYPE=TABLE FORM=ID:Form1 ATTR=ID:f_oprTab__ctl0_DataList11 EXTRACT=HTM 
+'Grantee
+TAG POS=1 TYPE=TABLE FORM=ID:Form1 ATTR=ID:f_oprTab__ctl0_Datalist1 EXTRACT=HTM 
+'Returnee Name
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:f_oprTab__ctl0_DataList2__ctl0_Datalabel12 EXTRACT=TXT 
+'Address
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:f_oprTab__ctl0_DataList2__ctl0_Datalabel14 EXTRACT=TXT 
+'City
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:f_oprTab__ctl0_DataList2__ctl0_Datalabel16 EXTRACT=TXT 
+'State
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:f_oprTab__ctl0_DataList2__ctl0_Datalabel17 EXTRACT=TXT 
+'Zip
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:f_oprTab__ctl0_DataList2__ctl0_Datalabel18 EXTRACT=TXT 
+'-----------------
+SET !VAR1 "f_oprTab__ctl1_ComboLegals__ctl1_Datalabel"
+'Subdivision
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}41 EXTRACT=TXT 
+'Lot
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}38 EXTRACT=TXT 
+'Block
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}39 EXTRACT=TXT 
+'Section
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}26 EXTRACT=TXT 
+'Acreage
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}9 EXTRACT=TXT 
+'Abstract
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}11 EXTRACT=TXT 
+'Freeform Legal
+TAG POS=1 TYPE=SPAN FORM=ID:Form1 ATTR=ID:{{!VAR1}}46 EXTRACT=TXT 
+'-----------------
+'Related Document List
+TAG POS=1 TYPE=DIV FORM=ID:Form1 ATTR=ID:f_oprTab_div2 EXTRACT=HTM 

@@ -1,0 +1,84 @@
+﻿'Document Number
+TAG POS=1 TYPE=TD ATTR=TXT:Document<SP>Number* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Book Number: 
+TAG POS=1 TYPE=TD ATTR=TXT:Book<SP>Number* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Filed Date: 
+TAG POS=1 TYPE=TD ATTR=TXT:Filed<SP>Date*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Instrument Type: 
+TAG POS=1 TYPE=TD ATTR=TXT:Instrument<SP>Type*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Consideration Amt: 
+TAG POS=1 TYPE=TD ATTR=TXT:Consideration<SP>Amt*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Comment: 
+TAG POS=1 TYPE=TD ATTR=TXT:Comment*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'# of Pages: 
+TAG POS=1 TYPE=TD ATTR=TXT:#<SP>of<SP>Pages*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Book Type: 
+TAG POS=1 TYPE=TD ATTR=TXT:Book<SP>Type*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Page Number: 
+TAG POS=1 TYPE=TD ATTR=TXT:Page<SP>Number*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Filing Time: 
+TAG POS=1 TYPE=TD ATTR=TXT:Filing<SP>Time*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Instrument Date: 
+TAG POS=1 TYPE=TD ATTR=TXT:Instrument<SP>Date*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Market Source: 
+TAG POS=1 TYPE=TD ATTR=TXT:Market<SP>Source*
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+
+'Grantor
+TAG XPATH="/html/body/table/tbody/tr[5]/td/table[4]/tbody/tr/td" EXTRACT=HTM
+'Grantee
+TAG XPATH="/html/body/table/tbody/tr[5]/td/table[4]/tbody/tr/td[2]" EXTRACT=HTM
+
+'Legal Description
+'Subdivision
+TAG POS=1 TYPE=TD ATTR=TXT:Subdivision* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'County Block: 
+TAG POS=1 TYPE=TD ATTR=TXT:County<SP>Block* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Land Description: 
+TAG POS=1 TYPE=TD ATTR=TXT:Land<SP>Description* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Plat Book: 
+TAG POS=1 TYPE=TD ATTR=TXT:Plat<SP>Book* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Water Permit: 
+TAG POS=1 TYPE=TD ATTR=TXT:Water<SP>Permit* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Addition: 
+TAG POS=1 TYPE=TD ATTR=TXT:Addition* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'NCB: 
+TAG POS=1 TYPE=TD ATTR=TXT:NCB* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Abstract: 
+TAG POS=1 TYPE=TD ATTR=TXT:Abstract* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Plat Page: 
+TAG POS=1 TYPE=TD ATTR=TXT:Plat<SP>Page* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+
+'Lot
+TAG POS=1 TYPE=TD ATTR=TXT:Lot* 
+TAG POS=R1 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+'Block
+TAG POS=1 TYPE=TD ATTR=TXT:Block* 
+TAG POS=R2 TYPE=TD ATTR=CLASS:clsdetaildata EXTRACT=TXT
+
+'Related Document Information
+TAG XPATH="/html/body/table/tbody/tr[5]/td/table[9]" EXTRACT=HTM
+'Property Address
+TAG XPATH="/html/body/table/tbody/tr[5]/td/table[11]" EXTRACT=HTM
+'Return Address
+TAG XPATH="/html/body/table/tbody/tr[5]/td/table[13]" EXTRACT=HTM

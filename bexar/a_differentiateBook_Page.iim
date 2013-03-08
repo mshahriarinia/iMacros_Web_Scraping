@@ -1,0 +1,10 @@
+﻿VERSION BUILD=7361445
+TAB T=1
+'TAB CLOSEALLOTHERS
+'URL GOTO=https://gov.propertyinfo.com/wam1/SearchResults.asp
+'TAG POS=1 TYPE=TD FORM=NAME:frmResult ATTR=ID:1-1
+'DS CMD=CLICK X={{!TAGX}} Y={{!TAGY}} CONTENT=
+'New page loaded
+
+'TAG XPATH="//td[@id='1-1']/a" EXTRACT=TXT
+TAG XPATH="//td[@id='1-7']/child::text()[last()]" EXTRACT=TXT
